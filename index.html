@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="cstyle.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <title>Gluttonous ¿Worm?</title>
+</head>
+<body id="body">
+    <div id="main">
+        <div id="scoreboard">
+            <span>score:</span>
+            <span id="score"> 0 </span>
+        </div>
+        <div id="game-container" >
+            <canvas class="aspect-ratio" id="game-canvas" width="31" height="31" ></canvas>
+            <canvas class="aspect-ratio" id="background-canvas" width="31" height="31" ></canvas>
+            <div class="game-overlay aspect-ratio" id="game-start">
+                <div>move the<span id="worm">worm</span> and ate them <span id="food">frutas</span>. It is not so difficult.</div>
+                <button class="start-button" onclick="startGame()">Let's see what's up</button>
+            </div>
+            <div class="game-overlay aspect-ratio" id="game-over">
+                <div>Game over</div>
+                <button class="start-button" onclick="startGame()">Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="comb.js"></script>
+</body>
+</html>
